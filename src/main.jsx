@@ -522,7 +522,7 @@ function BloodGroupField({ label, name, value, error, onChange, onBlur }) {
             {group}
           </button>
         ))}
-        <button
+        {/* <button
           className={!isCommonGroup && value ? 'blood-group-option is-selected' : 'blood-group-option'}
           type="button"
           role="radio"
@@ -531,9 +531,9 @@ function BloodGroupField({ label, name, value, error, onChange, onBlur }) {
           onClick={selectOther}
         >
           Other
-        </button>
+        </button> */}
       </div>
-      <input
+      {/* <input
         ref={customInputRef}
         className="blood-group-custom"
         name={`${name}-other`}
@@ -542,7 +542,7 @@ function BloodGroupField({ label, name, value, error, onChange, onBlur }) {
         placeholder="Enter other blood group"
         onBlur={onBlur}
         onChange={(event) => onChange(event.target.value.toUpperCase())}
-      />
+      /> */}
       {error && <p className="error-text">{error}</p>}
     </div>
   );
